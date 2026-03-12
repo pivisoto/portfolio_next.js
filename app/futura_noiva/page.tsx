@@ -7,7 +7,7 @@ export default function FuturaNoiva() {
   const [senha, setSenha] = useState("");
   const [acessoLiberado, setAcessoLiberado] = useState(false);
 
-  const verificarSenha = (e) => {
+  const verificarSenha = (e: React.FormEvent) => {
     e.preventDefault();
     if (senha.toLowerCase().trim() === "vede") {
       setAcessoLiberado(true);
